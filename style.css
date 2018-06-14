@@ -1,6 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
-  background-color: #f1f1f1; }
+  background-color: #e0dadae0; }
   body #map {
     height: 300px;
     width: auto;
@@ -130,7 +130,8 @@ body {
       body .navbar li i {
         padding-top: 20px; }
     body .navbar .separate {
-      border: 1px solid #f1f1f1; }
+      border-left: 1px solid #f1f1f1;
+      border-left-style: groove; }
   body .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -138,13 +139,13 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer; }
-  body:hover, body :focus {
+  body .dropbtn:hover {
     background-color: #2980B9; }
   body .dropdown {
     position: relative;
     display: inline-block; }
-  body:hover {
-    background-color: #ddd; }
+  body .dropdown:hover {
+    background-color: #f1f1f1; }
   body .dropdown-content {
     display: none;
     position: fixed;
@@ -220,8 +221,17 @@ body {
     background: #ffffff;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 0;
+    margin-right: 0px;
     border-radius: 3.5px; }
+    @media screen and (max-height: 450px) {
+      body .caixa-bloco {
+        text-align: inherit;
+        padding: 30px;
+        background: #ffffff;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: -25px;
+        border-radius: 3.5px; } }
   body .subcaixa1 {
     text-align: inherit;
     background: #ffffff;
@@ -238,10 +248,11 @@ body {
       body .subcaixa1 .row i {
         padding-top: 15px;
         padding-left: 25px;
+        font-size: 35px;
         color: #3498DB; }
       body .subcaixa1 .row p {
         padding-left: 5px;
-        padding-top: 16px;
+        padding-top: 24px;
         font-style: bold;
         font-weight: 600;
         font-style: bold;
@@ -275,11 +286,11 @@ body {
       text-align: center; }
       body .subcaixa2 .row i {
         padding-top: 15px;
-        padding-left: 25px;
+        padding-left: 35px;
         color: #3498DB; }
       body .subcaixa2 .row p {
         padding-left: 5px;
-        padding-top: 16px;
+        padding-top: 24px;
         font-style: bold;
         font-style: bold;
         color: #3e4b5b;

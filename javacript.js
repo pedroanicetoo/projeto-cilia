@@ -20,13 +20,13 @@ $(document).ready(function () {
 });
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* quando a pessoa clica, 
+aparece um togle entre a div content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+// fecha o dropdown se o usuário clicar novamente
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
 
