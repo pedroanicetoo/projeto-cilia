@@ -1,0 +1,313 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f1f1f1; }
+  body #map {
+    height: 300px;
+    width: auto;
+    position: relative;
+    display: flex; }
+  body #sidebar {
+    font-size: 55px;
+    cursor: pointer;
+    padding: 0px 10px 0 30px; }
+  body .menu-item {
+    margin: 0;
+    padding: 0; }
+    body .menu-item button {
+      margin: 0; }
+  body .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px; }
+    body .sidenav img {
+      padding-left: 7px; }
+    body .sidenav h5 {
+      color: #3498DB;
+      display: inline-block;
+      font-size: 60px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -5px; }
+    body .sidenav .row {
+      padding-left: 25px;
+      padding-bottom: 20px; }
+    body .sidenav hr {
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0; }
+    body .sidenav p {
+      display: inline-block;
+      padding-top: 8px;
+      padding-left: 8px;
+      font-weight: 900; }
+    @media screen and (max-height: 450px) {
+      body .sidenav {
+        padding-top: 15px; } }
+    body .sidenav .indisponivel {
+      opacity: 0.3; }
+    body .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px; }
+    body .sidenav a {
+      padding: 8px 8px 8px 15px;
+      text-decoration: none;
+      font-size: 13px;
+      color: #818181;
+      display: block;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      body .sidenav a i {
+        font-size: 30px; }
+      @media screen and (max-height: 450px) {
+        body .sidenav a {
+          font-size: 18px; } }
+  body .item-dropdown {
+    display: inline-block; }
+    body .item-dropdown p {
+      font-size: 14px;
+      margin: 0; }
+  body .navbar {
+    margin-top: 0;
+    padding: 0;
+    margin-right: -16px;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inherit;
+    background-color: #3498DB; }
+    body .navbar .logo {
+      font-size: 60px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -5px; }
+    body .navbar .ajust-icon {
+      color: #2e2d2dc4; }
+    body .navbar a {
+      color: #ffff;
+      padding-left: 5.5rem;
+      padding-right: 5.5rem;
+      padding-bottom: 2.2rem;
+      font-weight: 800; }
+    body .navbar p {
+      font-weight: 800; }
+    body .navbar ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #ffff;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-left: -1px; }
+    body .navbar li {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      margin: 0;
+      color: #ffff; }
+      body .navbar li a {
+        display: inherit; }
+      body .navbar li i {
+        padding-top: 20px; }
+    body .navbar .separate {
+      border: 1px solid #f1f1f1; }
+  body .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; }
+  body:hover, body :focus {
+    background-color: #2980B9; }
+  body .dropdown {
+    position: relative;
+    display: inline-block; }
+  body:hover {
+    background-color: #ddd; }
+  body .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 230px;
+    overflow: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+    body .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; }
+    body .dropdown-content hr {
+      margin: 0;
+      padding: 0; }
+    body .dropdown-content .saiu {
+      color: red; }
+  body .show {
+    display: block; }
+  body .conteudo {
+    margin: 2em;
+    padding: 0 20px 0 20px; }
+  body .montadora {
+    display: inherit;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+    padding-left: inherit;
+    padding-top: 12px;
+    text-align: initial; }
+    body .montadora h5 {
+      font-style: bold;
+      color: #3e4b5b;
+      font-weight: 800;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    body .montadora i {
+      color: #29b6ff; }
+  body .col-sm-12 {
+    padding-right: 15px;
+    padding-left: 7px; }
+  body .caixa {
+    text-align: inherit;
+    padding: 30px;
+    background: #ffffff;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 3.5px; }
+  body .caixa-inicio {
+    text-align: inherit;
+    padding: 15px;
+    margin-right: -16px;
+    background: #ffffff;
+    margin-top: 0;
+    border-radius: 3.5px; }
+    body .caixa-inicio i {
+      font-size: 2.1rem;
+      margin: 0;
+      padding: 0;
+      opacity: 0.3; }
+    body .caixa-inicio h5 {
+      font-size: 1.1rem;
+      display: initial;
+      padding: 8px 0 0px 25px; }
+    body .caixa-inicio .prox-pagina {
+      padding: 8px 0 0px 0px; }
+  body .caixa-bloco {
+    text-align: inherit;
+    padding: 30px;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 0;
+    border-radius: 3.5px; }
+  body .subcaixa1 {
+    text-align: inherit;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: -10px;
+    border-radius: 3.5px; }
+    body .subcaixa1 hr {
+      margin-top: 0;
+      margin-bottom: 0; }
+    body .subcaixa1 .row {
+      text-align: center; }
+      body .subcaixa1 .row i {
+        padding-top: 15px;
+        padding-left: 25px;
+        color: #3498DB; }
+      body .subcaixa1 .row p {
+        padding-left: 5px;
+        padding-top: 16px;
+        font-style: bold;
+        font-weight: 600;
+        font-style: bold;
+        color: #3e4b5b;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    body .subcaixa1 tr {
+      padding-left: 5px; }
+      body .subcaixa1 tr img {
+        color: #2980B9; }
+      body .subcaixa1 tr p {
+        padding-top: 10px;
+        padding-left: 10px; }
+      body .subcaixa1 tr th {
+        display: flex; }
+  body .col-sm-6 {
+    padding: 0;
+    margin: 0; }
+  body .subcaixa2 {
+    text-align: inherit;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+    border-radius: 3.5px; }
+    body .subcaixa2 hr {
+      margin-top: 0;
+      margin-bottom: 0; }
+    body .subcaixa2 .row {
+      text-align: center; }
+      body .subcaixa2 .row i {
+        padding-top: 15px;
+        padding-left: 25px;
+        color: #3498DB; }
+      body .subcaixa2 .row p {
+        padding-left: 5px;
+        padding-top: 16px;
+        font-style: bold;
+        font-style: bold;
+        color: #3e4b5b;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  body .col {
+    border-radius: 0.5px; }
+  body .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga'; }
+
+/*# sourceMappingURL=style.css.map */

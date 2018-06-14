@@ -1,0 +1,19 @@
+barra de navegação
+	-perfil do usuário
+		-cor e fontes
+		-ícones
+	-gaveta lateral
+		-cor e fontes
+		-ícones e linhas
+	-navegador
+		-fontes
+conteúdo
+	-gráfico que ocupa toda linha x
+		-título com ícone e fonte adequada
+		-google charts
+	-informações que ocupa metade de outra linha y
+		-título com ícone e fonte adequada	
+		-várias rows separadas por linhas com informações breves
+	-google maps que ocupa metade da outra linha y
+		-título com ícone e fonte adequada
+		-googlemaps

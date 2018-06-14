@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="javacript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXnmaBzYU89VZtURKu3pyTWi_Vv67IKdU&callback=initMap" async
+        defer></script>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="row">
+            <img src="assets/cilia3.png" alt="" width="80" height="90">
+            <h5>cilia</h5>
+        </div>
+        <a href="#">
+            <div class="row">
+                <i class="material-icons">
+                    av_timer
+                </i>
+                <p>Dashboard</p>
+            </div>
+        </a>
+        <hr />
+        <a href="#">
+                <div class="row">
+                    <i class="material-icons">
+                        assignment
+                    </i>
+                    <p>Atendimentos(108)</p>
+                </div>
+            </a>
+        <hr />
+        <a href="#">
+                <div class="row">
+                    <i class="material-icons">
+                       build
+                    </i>
+                    <p>Reparos(42)</p>
+                </div>
+            </a>
+        <hr />
+        <a href="#">
+                <div class="row">
+                    <i class="material-icons">
+                        directions_car
+                    </i>
+                    <p>Carros Reserva(56)</p>
+                </div>
+            </a>
+
+        <div class="indisponivel">
+            <hr />
+            <a href="#">
+                    <div class="row">
+                        <i class="material-icons">
+                            build
+                        </i>
+                        <p>Oficinas(42)</p>
+                    </div>
+                </a>
+            <hr />
+            <a href="#">
+                    <div class="row">
+                        <i class="material-icons">
+                            people
+                        </i>
+                        <p>Usuário(42)</p>
+                    </div>
+                </a>
+            <hr />
+            <a href="#">
+                    <div class="row">
+                        <i class="material-icons">
+                            contacts
+                        </i>
+                        <p>Grupos(8)</p>
+                    </div>
+                </a>
+            <hr />
+            <a href="#">
+                    <div class="row">
+                        <i class="material-icons">
+                            folder_special
+                        </i>
+                        <p>Permissões(4)/p>
+                    </div>
+                </a>
+            <hr />
+            <a href="#">
+                    <div class="row">
+                        <i class="material-icons">
+                            settings
+                        </i>
+                        <p>Configurações</p>
+                    </div>
+                </a>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-text">
+                    <span id="sidebar">&#9776;</span>
+                    <a class="navbar-toggler" type="link" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="material-icons">reorder</i>
+                    </a>
+                </li>
+                <li class="navbar-brand logo">
+                    <img src="assets/Cilia2.png" alt="" width="85px" height="85px">cilia
+                </li>
+            </ul>
+
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="menu-item">
+                    <a class="nav-link" style="font-weight: 800;" href="#">
+                        <span style="display: block;">
+                            <i class="material-icons"> help</i>Ajuda</span>
+                    </a>
+                </li>
+
+                <li class="menu-item separate">
+                    <a class="nav-link" href="#">
+                        <span style="display: block;">
+                            <i class="material-icons">speaker_notes</i> Suporte via chat</span>
+                    </a>
+                </li>
+                <li class="menu-item separate">
+                    <div class="dropdown">
+                        <span style="display: block;">
+                            <button onclick="myFunction()" class="dropbtn">
+
+                                <div class="item-dropdown" style="display: inline-block;">
+                                    <p>Diego•Auto/RE-TESTE</p>
+                                    <p>Administrador</p>
+                                </div>
+                                <img src="assets/Cilia1.png" alt="cillia-icon" height="70px" width="70px;">
+
+                            </button>
+                        </span>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Meu perfil</a>
+                            <hr>
+                            <a href="#about">Configurações</a>
+                            <hr>
+                            <a class="saiu" href="#contact">Sair</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="conteudo">
+
+
+        <div class="row caixa-inicio">
+            <div class="col-sm-12">
+                <div>
+                    <div class="row">
+                        <h5>INÍCIO</h5>
+                        <i class="material-icons">
+                            keyboard_arrow_right
+                        </i>
+                        <h5 class="prox-pagina">PÁGINA TESTE</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuid"></div>
+        <div class="row caixa-bloco">
+            <div class="col-sm-12">
+                <div>
+                    <div class="row montadora">
+                        <i class="material-icons">build</i>
+                        <h5 style="display: initial;">Montadoras</h5>
+                    </div>
+                    <div id="highcharts-5dcd4c53-2084-4633-bfa6-442ff2537f56">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="subcaixa1">
+                    <div class="row">
+                        <i class="material-icons">
+                            directions_car
+                        </i>
+                        <p>Veículo</p>
+                    </div>
+                    <hr>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img src="assets/if_Volkswagen_2_104802.svg" alt="wolkswagen" width="40" height="40">
+                                    <p>VOLKSWAGEN POLO (2018) CONFORTLINE 200 TSI 1.0 TSI 2018</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="assets/if_Volkswagen_2_104802.svg" alt="wolkswagen" width="40" height="40">
+                                    <p>VOLKSWAGEN POLO (2018) CONFORTLINE 200 TSI 1.0 TSI 2018</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="assets/if_Volkswagen_2_104802.svg" alt="wolkswagen" width="40" height="40">
+                                    <p>VOLKSWAGEN POLO (2018) CONFORTLINE 200 TSI 1.0 TSI 2018</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img src="assets/if_Volkswagen_2_104802.svg" alt="wolkswagen" width="40" height="40">
+                                    <p>VOLKSWAGEN POLO (2018) CONFORTLINE 200 TSI 1.0 TSI 2018</p>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="subcaixa2">
+                    <div class="row">
+                        <i class="material-icons">
+                            place
+                        </i>
+                        <p>Localização</p>
+                    </div>
+                    <hr>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
