@@ -1,9 +1,10 @@
 body {
+    //elementos gerais
     font-family: "Lato", sans-serif;
     background-color: #e0dadae0;
-    
+    overflow-x: hidden;
     #map{
-        height: 300px;
+        height: 325px;
         width: auto;
         position: relative;
         display: flex;
@@ -21,11 +22,11 @@ body {
             margin:0;
         }
     }
+    //sidenav elementos 
     .sidenav{
         img{
             padding-left: 7px; 
         }
-        
         h5{
             color: #3498DB;
             display: inline-block;
@@ -53,8 +54,6 @@ body {
             padding-left: 8px;
             font-weight: 900;
         }
-
-        //sidenav
         height: 100%;
         width: 0;
         position: fixed;
@@ -66,7 +65,8 @@ body {
         -webkit-transition: 0.5s;
         transition: 0.5s;
         padding-top: 60px;
-        @media screen and (max-height: 450px) {
+        
+        @media screen and (max-height: 895px) {
             padding-top: 15px;
         }
         //seção indisponível da sidenav
@@ -93,11 +93,16 @@ body {
             i{
                 font-size: 30px;
             }
-            @media screen and(max-height: 450px) {
-                font-size: 18px;
+            @media screen and(max-height: 895px) {
+                font-size: 12px;
             }
 
         }
+
+        .selected:hover{
+            background-color: #2980B9;
+        }
+        
     }
     
     .item-dropdown{
@@ -108,6 +113,12 @@ body {
          }
     }
 
+    .nav{
+        li:hover{
+            background-color: #2980B9;  
+        }
+    }
+    //navbar elementos gerais
     .navbar{
         margin-top: 0; 
         padding: 0;
@@ -118,27 +129,38 @@ body {
         display: -ms-flexbox;
         display: inherit;
         background-color: #3498DB;
+        //responsividade cel
+        @media screen and (max-height: 895px){
+            margin-right: -22px;
+            font-size: 10px;
+        }
         //logo de título da marca
         .logo{
             font-size: 60px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: 900;
             letter-spacing: -5px;
+            @media screen and (max-height: 895px){
+                font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 900;
+                letter-spacing: -4px;
+                margin-right: 15px;
+            }
         }
 
         .ajust-icon{
             color : #2e2d2dc4;
         }
-
+        p{
+            font-weight: 800;
+        }
 
         a{
             color:#ffff;
             padding-left: 5.5rem;
             padding-right: 5.5rem;
             padding-bottom: 2.2rem;
-            font-weight: 800;
-        }
-        p{
             font-weight: 800;
         }
 
@@ -157,29 +179,39 @@ body {
                 -ms-flex-pack: justify;
                     justify-content: space-between;
             margin-left: -1px;
+            @media screen and (max-height: 895px){
+                flex-wrap: wrap-reverse;
+            }
         }
+    
+    //itens da navbar
         li{
-            -webkit-box-flex: 1;
-                -ms-flex-positive: 1;
-                    flex-grow: 1;
-            -ms-flex-preferred-size: auto;
-                flex-basis: auto;
-            margin:0;
-            color:#ffff;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        margin:0;
+        color:#ffff;
+
+            @media screen and (max-height: 895px){
+                border-left-style: none;
+            }
+
             a{
                 display: inherit;
             }
             i{
                 padding-top: 20px;
             }
-            
-        }
         
         .separate{
             border-left : 1px solid #f1f1f1;
             border-left-style: groove;
-        }
-    }
+
+            }
+        }//fim itens
+    }//fim navbar
 
     .dropbtn {
             background-color: #3498DB;
@@ -216,6 +248,9 @@ body {
             text-decoration: none;
             display: block;
         }
+            a:hover{
+                background-color:#fff;
+            }
 
         hr{
             margin:0;
@@ -276,8 +311,11 @@ body {
     background: #ffffff;
     margin-top: 0;
     border-radius: 3.5px;
+    @media screen and (max-height: 895px){
+        margin-right: -22px;
+    }
     i{
-        font-size: 2.1rem;
+        font-size: 1.1rem;
         margin: 0;
         padding: 0;
         opacity: 0.3;
@@ -298,17 +336,17 @@ body {
     padding: 30px;
     background: #ffffff;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 3.5px;
 
-    @media screen and (max-height: 450px){
+    @media screen and (max-height: 895px){
         text-align: inherit;
         padding: 30px;
         background: #ffffff;
         margin-top: 10px;
-        margin-left: 10px;
-        margin-right: -25px;
+        margin-left: 7px;
+        margin-right:  7px;
         border-radius: 3.5px;
     }
 }
@@ -319,8 +357,18 @@ body {
     margin-top: 10px;
     margin-bottom: 10px; 
     margin-left: 25px;
-    margin-right:-10px;
+    margin-right:6px;
     border-radius: 3.5px;
+    @media screen and (max-height: 895px){
+        text-align: inherit;
+        background: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 5px; 
+        margin-left: 22px;
+        margin-right:22px;
+        border-radius: 3.5px;
+    }
+    
     hr{
         margin-top: 0;
         margin-bottom: 0;
@@ -329,8 +377,8 @@ body {
         text-align: center;
         i{
             padding-top: 15px;
-            padding-left: 25px;
-            font-size: 35px;
+            padding-left: 40px;
+            font-size: 30px;
             color:  #3498DB;
         }
         p{
@@ -343,27 +391,26 @@ body {
          font-weight: 800;
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        
+
     }
 
     //display das linhas 
     tr{
         padding-left: 5px;
         img{
+            height: 80px;
+            width: 80px;
             color: #2980B9;
         }
         p{
-            padding-top:10px;
-            padding-left: 10px;
+            padding-top:35px;
+            padding-left: 0px;
         }
         th{
         display: flex;
+        padding: 0;
         }
     }
-}
-.col-sm-6{
-    padding: 0;
-    margin:0;
 }
 
 .subcaixa2{
@@ -371,8 +418,8 @@ body {
     background: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px; 
-    margin-right: 15px;
-    margin-left:20px;
+    margin-right: 22px;
+    margin-left:6px;
     border-radius: 3.5px;
     hr{
         margin-top: 0;
@@ -395,14 +442,31 @@ body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     }
+    @media screen and (max-height: 895px){
+    text-align: inherit;
+    background: #ffffff;
+    margin-top: -7px;
+    margin-bottom: 10px; 
+    margin-right: 22px;
+    margin-left: 22px;
+    border-radius:3.5px;
+    }
 }
+
+
+
+.col-sm-6{
+    padding: 0;
+    margin:0;
+}
+
 
 .col{
     border-radius: 0.5px;
 }
 
 
-
+//Classe para os ícones
     .material-icons {
         font-family: 'Material Icons';
         font-weight: normal;

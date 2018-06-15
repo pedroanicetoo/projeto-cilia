@@ -1,0 +1,5 @@
+-Página estilizada com bootstrap e css 
+-responsiva (feita em responsividade ideal-padrão mobile aplicada no mozilla-firefox e opera : 400x895p)
+-Navegadores utilizados para o ajusta : Opera e Mozilla-firefox
+-instalador do sass,bootstrap e jQuery via npm (node-modules)
+-utilização de alguns plugins do vscode para identar o código style.scss
