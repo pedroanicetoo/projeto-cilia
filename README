@@ -3,3 +3,4 @@
 -Navegadores utilizados para o ajusta : Opera e Mozilla-firefox
 -instalador do sass,bootstrap e jQuery via npm (node-modules)
 -utilização de alguns plugins do vscode para identar o código style.scss
+-como se tratava apenas de um arquivo por função, não houve a necessidade de criação de diretórios javascript e css
